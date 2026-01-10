@@ -36,7 +36,31 @@
         "pages": [
           "concepts/flows",
           "concepts/runs",
-          "concepts/browser-profiles"
+          "concepts/browser-profiles",
+          "concepts/credits"
+        ]
+      },
+      {
+        "group": "Common workflows",
+        "pages": [
+          "common-workflows/creating-a-flow",
+          "common-workflows/running-a-flow",
+          "common-workflows/untitled-page",
+          "common-workflows/analyzing-a-flow"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/change-monitoring"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/zapier",
+          "integrations/make",
+          "integrations/n8n"
         ]
       }
     ]
