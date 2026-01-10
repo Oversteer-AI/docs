@@ -58,9 +58,9 @@
       {
         "group": "Integrations",
         "pages": [
-          "integrations/zapier",
+          "integrations/n8n",
           "integrations/make",
-          "integrations/n8n"
+          "integrations/zapier"
         ]
       }
     ]
