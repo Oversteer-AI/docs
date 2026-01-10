@@ -28,16 +28,8 @@
         "group": "Introduction",
         "pages": [
           "introduction/what-is-oversteer",
-          "introduction/quickstart"
-        ]
-      },
-      {
-        "group": "Concepts",
-        "pages": [
-          "concepts/flows",
-          "concepts/runs",
-          "concepts/browser-profiles",
-          "concepts/credits"
+          "introduction/quickstart",
+          "introduction/concepts"
         ]
       },
       {
