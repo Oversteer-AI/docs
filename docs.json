@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#353535",
     "light": "#353535",
-    "dark": "#353535"
+    "dark": "#EBEBEB"
   },
   "favicon": "/oversteer/favicon.ico",
   "navigation": {
