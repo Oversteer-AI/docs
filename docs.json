@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Oversteer Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#ffe500",
-    "dark": "#ff0000"
+    "primary": "#353535",
+    "light": "#353535",
+    "dark": "#353535"
   },
   "favicon": "/oversteer/favicon.ico",
   "navigation": {
@@ -100,5 +100,10 @@
   "description": "Documentation for Oversteer",
   "appearance": {
     "default": "system"
+  },
+  "background": {
+    "color": {
+      "dark": "#000000"
+    }
   }
 }
