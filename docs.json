@@ -75,8 +75,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Try Oversteer",
+      "href": "https://oversteer.dev"
     }
   },
   "contextual": {
