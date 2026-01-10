@@ -4,8 +4,8 @@
   "name": "Oversteer Docs",
   "colors": {
     "primary": "#353535",
-    "light": "#353535",
-    "dark": "#EBEBEB"
+    "light": "#EBEBEB",
+    "dark": "#353535"
   },
   "favicon": "/oversteer/favicon.ico",
   "navigation": {
