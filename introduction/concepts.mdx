@@ -1,19 +1,20 @@
 ---
-title: 'Concepts'
+title: "Concepts"
+description: "Commonly used terminology on the platform"
 ---
 
-# Flows
+## Flows
 
 A flow is the saved recipe for a browser task. Oversteer captures the exact steps—navigate, click, type, upload—and stores them in a deterministic format so they replay the same way each time. You can draft a flow from a natural-language prompt or specify steps explicitly, then mark any inputs as variables so the same flow works across different products, accounts, or dates. Flows are versioned, auditable, and self-healing, meaning they adapt to minor page changes without you rewriting anything. Share flows with your team, keep sensitive data scoped to the flow, and reuse them as building blocks for your automation.
 
-# Runs
+## Runs
 
 A run is a single execution of a flow with a specific set of inputs. You can launch a run from the dashboard, on a schedule, or from your own systems. While a run is in progress you can watch step-by-step status updates, and when it finishes you’ll see screenshots, page snapshots, timings, and the final results it captured. Runs reuse your chosen browser profile so sessions stay consistent, and they report clearly when something blocks or needs attention. Each run consumes credits based on the work performed and is logged so your team can review history and performance.
 
-# Browser profiles
+## Browser Profiles
 
 Browser profiles are dedicated, reusable browsing environments for your flows. They keep cookies, sessions, and device settings so Oversteer looks like the same real user every time, which helps with logged-in tasks and reduces bot detection. Pick a preferred region or city to browse from, and let Oversteer handle proxies behind the scenes. Profiles are isolated per team and per flow, keeping credentials and activity contained while still letting you switch between them for different sites or use cases.
 
-# Credits
+## Credits
 
 Credits are the usage currency for Oversteer. Each step your flows perform consumes credits, with a higher rate only when advanced stealth is needed or a CAPTCHA is solved. Plans include a monthly credit allowance, and you can upgrade for larger pools or unlimited usage. You can track credit use across runs to see which flows or sites drive the most activity and budget accordingly.
