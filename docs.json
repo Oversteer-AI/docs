@@ -50,8 +50,7 @@
         "group": "Use Cases",
         "pages": [
           "use-cases/web-scraping",
-          "use-cases/form-submissions",
-          "use-cases/competitor-intelligence"
+          "use-cases/form-submissions"
         ]
       }
     ]
