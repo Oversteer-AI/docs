@@ -28,16 +28,16 @@
         "group": "Introduction",
         "pages": [
           "introduction/what-is-oversteer",
-          "introduction/concepts"
+          "introduction/getting-started"
         ]
       },
       {
-        "group": "Common workflows",
+        "group": "Fundamentals",
         "pages": [
-          "common-workflows/creating-a-flow",
-          "common-workflows/running-a-flow",
-          "common-workflows/untitled-page",
-          "common-workflows/analyzing-a-flow"
+          "fundamentals/creating-a-flow",
+          "fundamentals/running-a-flow",
+          "fundamentals/scheduling-a-flow",
+          "fundamentals/analyzing-a-flow"
         ]
       },
       {
