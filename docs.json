@@ -17,7 +17,7 @@
           "href": "https://oversteer.dev"
         },
         {
-          "anchor": "Book a demo",
+          "anchor": "Book a Demo",
           "icon": "calendar",
           "href": "https://cal.com/tim-jang-r1jrml/oversteer-demo"
         }
@@ -43,15 +43,7 @@
       {
         "group": "Features",
         "pages": [
-          "features/change-monitoring"
-        ]
-      },
-      {
-        "group": "Integrations",
-        "pages": [
-          "integrations/n8n",
-          "integrations/make",
-          "integrations/zapier"
+          "features/untitled-page"
         ]
       }
     ]
