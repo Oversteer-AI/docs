@@ -1,4 +1,67 @@
 ---
 title: "Running a Flow"
-description: "Learn how to run an previously created flow in Oversteer"
+description: "Learn how to run an successful previously created flow in Oversteer"
 ---
+
+## Overview
+
+Once a flow has been successfully created, you can now run this flow at any given time. You can run a flow via the Oversteer dashboard, schedule, or API.
+
+## Running from Oversteer Dashboard
+
+To run a flow from the Oversteer dashboard, navigate to the flows page. Then, navigate to the individual flow you want to run. The, click "Run" and follow the instructions.
+
+**Configuration**
+
+- **Start URL:** The initial page the flow should start on. In most cases, the default should not be changed.
+- **Browser profile:** The browser profile the flow will use. If authenticated session is required to access the site you want to automate, ensure you are using a browser profile that is logged in.
+- **Flow variables:** Other variables that the agent has detected as useful configurable variables. This includes search terms, form inputs, etc.
+
+## Running on a Schedule
+
+To run the flow on a scheduled cadence, see [Scheduling a Flow](https://oversteer.mintlify.app/fundamentals/scheduling-a-flow).
+
+## Running via API
+
+To run via API, you can make a `POST` request to `https://api.oversteer.dev/api/runs` with your Oversteer API key, flow information, and other configuration
+
+Here's in example cURL request:
+
+```bash
+curl -X POST https://api.oversteer.dev/api/runs \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+  "flowId": "YOUR_FLOW_ID",
+  "initialVars": {
+    "startUrl": "YOUR_START_URL"
+  },
+  "browserProfile": {
+    "mode": "existing",
+    "id": "YOUR_BROWSER_PROFILE_ID"
+  },
+  "delivery": {
+    "type": "sync",
+    "timeoutMs": 25000
+  }
+}'
+```
+
+**Configuration**
+
+- **flowId: **Id of the flow desired
+- **initialVars**
+  - **startUrl:** The initial page the flow should start on. In most cases, the default should not be changed.
+  - **\<other\>: **Other variables that the agent has detected as useful configurable variables. This includes search terms, form inputs, etc.
+- **browserProfile**
+  - **mode:** `existing` (at this time, this is the only option that should be used)
+  - **id:** Id of the browser profile desired
+- **delivery**
+  - **type: **One of `sync | poll | webhook` depending on desired API behavior
+    - Sync will return a synchronous response or timeout depending on `timeoutMs` 
+    - Poll will return a `runId` that can be polled for status at `https://api.oversteer.dev/api/runs/<runId>/poll`
+    - Webhook will return a `runId` that can be polled for status and will deliver the finished payload to your webhook endpoint specified
+  - **timeoutMs** (required if `type` is `sync`): A timeout for early returning synchronous run results
+  - **webhook** (required if `type` is `webhook`)
+    - **url**: Your webhook url endpoint
+    - **secret**: Your webhook secret that can be used to verify Oversteer signature header

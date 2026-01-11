@@ -3,7 +3,7 @@ title: "Creating a Flow"
 description: "Learn how to create and configure flows in Oversteer"
 ---
 
-## Overview
+## Context
 
 A flow is the base building block of Oversteer. It is a essentially a saved set of steps that can be used to deterministically run and accomplish web tasks.
 
@@ -15,12 +15,12 @@ Within the Oversteer dashboard, navigate to the **Create** tab and follow the in
 
 ### Required
 
-- **Starting URL: **The initial page the flow should start on. Ideally, this URL is very relevant to the page where the task must be executed.
-- **Prompt:** The goal that the flow will attempt to achieve. Ideally, this prompt conveys task intent and includes step-by-step instructions of how to do it. 
+- **Starting URL:** The initial page the flow should start on. Ideally, this URL is very relevant to the page where the task must be executed.
+- **Prompt:** The goal that the flow will attempt to achieve. Ideally, this prompt conveys task intent and includes step-by-step instructions of how to do it.
 
 ### Optional
 
-- **Browser profile**: The browser profile the flow will use. Recommended for flows that need authenticated sessions. To do so, users must create a browser profile that is logged-in to the desired website and select that at flow creation.
+- **Browser profile**: The browser profile the flow will use. Recommended for flows that need authenticated sessions. To do so, users must create a browser profile that is logged in to the desired website and select that at flow creation.
 - **Browser location:** The location of the browser proxy used. Recommended for websites that require a certain geographical location to access.
-- **Structured output**: Structured JSON schema of what the flow should output. Recommended for web scraping, extraction, and monitoring tasks. 
+- **Structured output**: Structured JSON schema of what the flow should output. Recommended for web scraping, extraction, and monitoring tasks.
 - **Sensitive data:** Sensitive data, such as login information, that the agent may need to complete the task. This data is securely encrypted and protected.
