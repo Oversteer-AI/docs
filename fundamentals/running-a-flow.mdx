@@ -19,7 +19,7 @@ To run a flow from the Oversteer dashboard, navigate to the flows page. Then, na
 
 ## Running on a Schedule
 
-To run the flow on a scheduled cadence, see [Scheduling a Flow](https://oversteer.mintlify.app/fundamentals/scheduling-a-flow).
+To run the flow on a scheduled cadence, see [Scheduling a Flow](/fundamentals/scheduling-a-flow).
 
 ## Running via API
 
@@ -49,16 +49,16 @@ curl -X POST https://api.oversteer.dev/api/runs \
 
 **Configuration**
 
-- **flowId: **Id of the flow desired
+- **flowId:** Id of the flow desired
 - **initialVars**
   - **startUrl:** The initial page the flow should start on. In most cases, the default should not be changed.
-  - **\<other\>: **Other variables that the agent has detected as useful configurable variables. This includes search terms, form inputs, etc.
+  - **\<other\>:** Other variables that the agent has detected as useful configurable variables. This includes search terms, form inputs, etc.
 - **browserProfile**
   - **mode:** `existing` (at this time, this is the only option that should be used)
   - **id:** Id of the browser profile desired
 - **delivery**
-  - **type: **One of `sync | poll | webhook` depending on desired API behavior
-    - Sync will return a synchronous response or timeout depending on `timeoutMs` 
+  - **type:** One of `sync | poll | webhook` depending on desired API behavior
+    - Sync will return a synchronous response or timeout depending on `timeoutMs`
     - Poll will return a `runId` that can be polled for status at `https://api.oversteer.dev/api/runs/<runId>/poll`
     - Webhook will return a `runId` that can be polled for status and will deliver the finished payload to your webhook endpoint specified
   - **timeoutMs** (required if `type` is `sync`): A timeout for early returning synchronous run results
