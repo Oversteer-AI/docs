@@ -28,7 +28,6 @@
         "group": "Introduction",
         "pages": [
           "introduction/what-is-oversteer",
-          "introduction/quickstart",
           "introduction/concepts"
         ]
       },
