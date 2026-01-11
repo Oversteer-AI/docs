@@ -2,3 +2,31 @@
 title: "Analyzing a Flow"
 description: "Learn how to observe your production flows in Oversteer"
 ---
+
+## Overview
+
+Once a flow is run, you have two main ways to analyze and observe their flow: individual and aggregate analytics.
+
+## Individual Analytics
+
+To access individual analytics on a given run, find the run through the **Runs** page or the **Flow \> Runs** page, then click on the individual run.
+
+On the run details page, you can see:
+
+- Run success
+- Run latency
+- Result output
+- Browser replay
+- Steps executed
+
+## Aggregate Analytics
+
+To access aggregate analytics, navigate to the **Analytics** page. Optionally, you can filter down by timeframe and flow.
+
+On the analytics page, you can see:
+
+- Total executions
+- Total credits used
+- Average latency
+  - Note: the latency of the first run of a given flow will take significantly longer than future runs since it must generate the flow steps. This may skew the results.
+- Success rate
